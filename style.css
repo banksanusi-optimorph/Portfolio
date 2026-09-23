@@ -1,4 +1,21 @@
 /* Custom styles if needed */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
 .animate-bounce {
     animation: bounce 2s infinite;
 }
@@ -12,5 +29,110 @@
     }
     60% {
         transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #home {
+        min-height: 100svh;
+        padding-top: 5rem;
+    }
+
+    #home h1 {
+        line-height: 1.02;
+        letter-spacing: 0.08em;
+    }
+
+    #home p {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    #home .flex-col.sm\:flex-row {
+        width: 100%;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #home .flex-col.sm\:flex-row > a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #background .grid,
+    #projects .grid,
+    #case-studies .space-y-4,
+    #testimonials .grid,
+    #skills .grid,
+    #services .grid,
+    #contact .flex {
+        grid-template-columns: 1fr !important;
+    }
+
+    #background .grid,
+    #projects .grid,
+    #testimonials .grid,
+    #skills .grid,
+    #services .grid {
+        display: grid;
+    }
+
+    #case-studies .space-y-4 {
+        display: block;
+    }
+
+    #contact .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact .flex a {
+        width: 100%;
+    }
+
+    .bg-[#1a1a1a].border.border-[#2f2a1f] {
+        padding: 1rem;
+    }
+
+    .bg-[#1a1a1a].border.border-[#2f2a1f] img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: clamp(2.2rem, 13vw, 3.2rem) !important;
+    }
+
+    h2 {
+        font-size: clamp(2rem, 8vw, 2.8rem) !important;
+    }
+
+    .text-4xl {
+        font-size: 2rem !important;
+    }
+
+    .text-2xl {
+        font-size: 1.5rem !important;
+    }
+
+    .text-lg {
+        font-size: 1rem !important;
+    }
+
+    .px-8 {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+
+    .py-3 {
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
     }
 }
