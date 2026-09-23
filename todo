@@ -1,0 +1,124 @@
+Create a single-page executive portfolio website for a Business Transformation Lead.
+
+Person & Identity
+Name: Funmilayo Bank-Sanusi (initials: FBS)
+Title: Business Transformation Lead | AI Strategy | Process Redesign | ERP & Automation Delivery
+Location: Lagos, Nigeria
+Available for: Remote and on-site engagements
+Design System
+Color palette: Deep charcoal #111111 and #161616 for dark sections, off-white #f8f7f4 for light sections, gold #d4af37 as the accent color throughout, white text #ffffff, muted text #888888 and #b8b8b8
+Typography:Playfair Display (serif) for headings and display text, Inter (sans-serif) for all body copy, labels, and UI text. Load both from Google Fonts.
+Style: Minimalist, corporate, executive-level. No shadows. Clean borders using #2a2a2a on dark sections, #e8e6e0 on light sections.
+Buttons: Outlined white button and gold filled button side by side as CTAs. No rounded corners on hero buttons — sharp edges.
+Cards:rounded-xl with border, no shadows.
+Animations: Fade-up on scroll using IntersectionObserver for every section. Staggered delay on grid items. 1000ms duration.
+Layout & Sections (top to bottom)
+1. Fixed Navbar
+Transparent when at top, transitions to bg-[#111111]/95 with backdrop-blur when scrolled past 40px
+Left: Logo image + “FBS” text in uppercase small tracking
+Right: 6 nav links — Home, Background, Projects, Case Studies, Skills, Contact — separated by vertical dividers (border-r border-[#333333])
+Active link highlighted in gold #d4af37, based on scroll position
+Mobile: hamburger menu toggles a vertical dropdown
+Logo image URL: https://public.readdy.ai/ai/img_res/d3c8b7da-98a0-4bd1-9640-e7e66006017e.png
+2. Hero Section (full viewport height)
+Background: Full-cover dark architectural abstract image with gradient overlay from-black/70 via-black/60 to-[#111111]
+Image URL:https://readdy.ai/api/search-image?query=abstract dark architectural geometry, diagonal lines, minimalist corporate aesthetic, deep charcoal black tones, subtle texture, luxury premium background for executive portfolio, high contrast, sophisticated, no people&width=1920&height=1080&seq=hero001&orientation=landscape
+Content (centered):
+Small gold label: “Lagos, Nigeria” — uppercase, tracked wide
+Giant name: “FUNMILAYO / BANK-SANUSI” — 2 lines, clamp(2.5rem, 6vw, 5.5rem), bold uppercase, wide letter spacing
+16px gold divider line, centered
+Subtitle: Business Transformation Lead | AI Strategy / Process Redesign | ERP & Automation Delivery — light weight, tracked
+Two buttons: “View My Work →” (white outline) and “Get In Touch” (gold fill), smooth scroll to #projects and #contact
+Bottom: Animated bouncing scroll indicator — a vertical gold line + down chevron
+3. My Background Section (bg-[#161616], section id: background)
+2-column layout (left: stats, right: text narrative)
+Left column:
+Gold “About” label + “My / Background” serif heading
+Gold divider line
+2×2 grid of stat cards (bg-[#1e1e1e], bordered), each with a Remix Icon in gold, a large number value, and a small label:
+15+ Enterprise-Scale Projects
+10+ Years of Experience
+6+ Industries Served
+50+ Cross-Functional Teams Led
+Right column:
+Italic serif pull quote: “I help organizations move from fragmented processes and manual operations to structured, automated, and measurable business performance.”
+3 paragraphs of body text in #b8b8b8 with some <strong> highlights in white
+Gold left-border callout box at bottom: “Core Philosophy” label + “Strategy without execution is just ambition. Every transformation I lead is anchored in measurable outcomes and structured delivery.”
+4. Projects Section (bg-[#111111], section id: projects)
+“Featured Work” gold label + “Selected Projects” serif heading + gold line right-aligned
+3-column card grid, each card with:
+Top image area (h-64): AI-generated abstract portrait image, hover zoom effect, category badge (top-left, gold text on dark overlay, sharp border), key metric stat (bottom-right, gold bold text)
+Bottom content area: Remix Icon in gold, bold title, small grey description paragraph, pill-shaped tool badges in bg-[#2a2a2a]
+Card border turns gold on hover
+Project 1 — ERP Implementation:
+
+Title: “Microsoft Dynamics 365 F&O Rollout”
+Metric: “40% faster close”
+Tools: Dynamics 365 F&O, Azure DevOps, Microsoft Power BI, Product Management
+Icon: ri-server-line
+Image: https://readdy.ai/api/search-image?query=abstract minimalist dark ERP enterprise software dashboard visualization, elegant charcoal background, deep navy and gold accent geometric elements, Microsoft Dynamics technology concept, corporate digital transformation, premium executive aesthetic, no people, clean luxury design&width=600&height=800&seq=proj101&orientation=portrait
+Project 2 — Process Redesign:
+
+Title: “BPMN-Led Procurement Process Overhaul”
+Metric: “55% less manual effort”
+Tools: BPMN 2.0, Lucidchart, Microsoft Excel, Visio
+Icon: ri-flow-chart
+Image: https://readdy.ai/api/search-image?query=abstract dark process flow architecture diagram, sophisticated geometric pathway network, charcoal black background with warm amber and gold glowing lines, workflow automation business concept, minimalist corporate design, no people, high-end executive aesthetic&width=600&height=800&seq=proj102&orientation=portrait
+Project 3 — Agile Delivery:
+
+Title: “Digital Product Backlog & Sprint Delivery”
+Metric: “3× delivery velocity”
+Tools: Jira, Confluence, Scrum / Kanban, Microsoft Excel
+Icon: ri-kanban-view
+Image: https://readdy.ai/api/search-image?query=abstract dark Agile sprint board concept, minimalist kanban workflow visualization, charcoal background with structured grid columns, gold and white accent lines, digital product delivery technology aesthetic, no people, sophisticated clean corporate design&width=600&height=800&seq=proj103&orientation=portrait
+5. Case Studies Section (bg-[#f8f7f4], section id: case-studies)
+“Deep Dives” gold label + “Case Studies” serif heading (dark text, light background)
+3 accordion items. Each has a collapsed row and an expandable panel.
+Collapsed row: Large faded gold number (01/02/03), gold category tag label above title, expand/collapse circle button (+ / −)
+Expanded panel: Tool badges row, then a 2-column grid: Left = Context, Problem, Approach; Right = Solution, Business Impact (2×2 metric cards in gold + label)
+Case Study 01 — ERP Implementation:
+
+Tag: ERP Implementation | Microsoft Dynamics 365
+Title: Microsoft Dynamics 365 F&O Implementation for a Retail & Distribution Group
+Context: Mid-sized Nigerian conglomerate, 6 subsidiaries, legacy ERP mix, 5000+ POs/month
+Problem: 18–22 day month-end close, manual reconciliation, no group-level reporting
+Approach: Fit-gap analysis, 3-phase roadmap, BPMN mapping of 24 processes, Azure DevOps
+Solution: D365 F&O single-tenant across 6 subsidiaries, 12 Power BI dashboards, bank integration
+Impact: 40% close reduction · 6→1 systems consolidated · ₦640M procurement savings · 91% UAT pass rate
+Tools: Dynamics 365 F&O, Azure DevOps, Power BI, BPMN 2.0, Microsoft Excel
+Case Study 02 — Process Redesign:
+
+Tag: Business Process Redesign | BPMN | Lean
+Title: Procurement Process Redesign for a Financial Services Organisation
+Context: West Africa asset management firm, 2,400 requisitions/year, 9 procurement staff
+Problem: 31-day avg cycle (benchmark: 12–15 days), redundant approvals, paper-based routing, maverick buying
+Approach: AS-IS BPMN audit of 14 sub-processes, value stream analysis, redesign workshops, delegation of authority matrix
+Solution: 4-tier approval workflow, Preferred Vendor Register, SharePoint PO-invoice matching, Excel SLA dashboard
+Impact: 55% cycle reduction (31→14 days) · 9→4 approval steps · 78% maverick purchasing reduction · ₦180M vendor savings
+Tools: BPMN 2.0, Lucidchart, Microsoft Visio, Microsoft Excel, SharePoint
+Case Study 03 — Agile Delivery:
+
+Tag: Product Management | Agile Delivery | Jira
+Title: Agile Delivery of an Internal Operations Platform for a Professional Services Firm
+Context: Big-4-affiliated firm, 9-month programme, 14-person squad, digitalizing onboarding/timesheet/staffing/leave
+Problem: Stalled after 3 months, no increments delivered, poorly written backlog, no sprint visibility
+Approach: Full backlog audit of 240 items, rewrote 80+ user stories to INVEST criteria, re-established Scrum ceremonies, Jira setup with epics/story points/sprints
+Solution: 4 deployed modules in 6 months: Digital Onboarding, Staffing Portal, Timesheet, Leave Management
+Impact: 3× velocity increase · 4 modules deployed · 65% sprint carryover reduction · 240+ items groomed in 3 weeks
+Tools: Jira, Confluence, Microsoft Excel, Scrum / Kanban, BPMN 2.0
+6. Skills & Tools Section (bg-[#111111], section id: skills)
+“Expertise” gold label + “Tools & Capabilities” heading
+4-column grid of 8 capability cards, each with: gold icon in a dark bordered square, percentage in large faded gold (top right), skill name, description, and a thin animated progress bar in gold
+Microsoft Excel — 97%
+Jira (Agile/Scrum) — 93%
+Microsoft Dynamics 365 — 91%
+BPMN Process Modelling — 95%
+Stakeholder Management — 96%
+Business Transformation — 95%
+Process Analysis — 97%
+AI Strategy & Automation — 88%
+Methodology diagram: Dark bordered panel showing 5 numbered circles connected by gradient lines — Diagnose → Design → Deliver → Embed → Scale
+**Certifications
+Add a downloadable CV / Resume button in the hero or background section
+Create a dedicated "Services" section listing consulting packages with pricing tiers or engagement types
+Add a testimonials or client logos section to build social proof

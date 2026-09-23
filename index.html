@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funmilayo Bank-Sanusi | Business Operations and Transformation Consultant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'playfair': ['Playfair Display', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'gold': '#d4af37',
+                        'charcoal': '#111111',
+                        'dark-charcoal': '#161616',
+                        'off-white': '#f8f7f4',
+                        'muted': '#888888',
+                        'muted-light': '#b8b8b8',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-inter text-white">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://public.readdy.ai/ai/img_res/d3c8b7da-98a0-4bd1-9640-e7e66006017e.png" alt="Logo" class="h-8 w-8">
+                <span class="text-white font-bold uppercase tracking-wider">FBS</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-white hover:text-gold transition-colors">Home</a>
+                <div class="border-r border-gray-600 h-6"></div>
+                <a href="#background" class="nav-link text-white hover:text-gold transition-colors">Background</a>
+                <div class="border-r border-gray-600 h-6"></div>
+                <a href="#projects" class="nav-link text-white hover:text-gold transition-colors">Projects</a>
+                <div class="border-r border-gray-600 h-6"></div>
+                <a href="#case-studies" class="nav-link text-white hover:text-gold transition-colors">Case Studies</a>
+                <div class="border-r border-gray-600 h-6"></div>
+                <a href="#skills" class="nav-link text-white hover:text-gold transition-colors">Skills</a>
+                <div class="border-r border-gray-600 h-6"></div>
+                <a href="#services" class="nav-link text-white hover:text-gold transition-colors">Services</a>
+                <div class="border-r border-gray-600 h-6"></div>
+                <a href="#contact" class="nav-link text-white hover:text-gold transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white">
+                    <i class="ri-menu-line text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-charcoal/95 backdrop-blur">
+            <div class="px-6 py-4 space-y-4">
+                <a href="#home" class="block text-white hover:text-gold transition-colors">Home</a>
+                <a href="#background" class="block text-white hover:text-gold transition-colors">Background</a>
+                <a href="#projects" class="block text-white hover:text-gold transition-colors">Projects</a>
+                <a href="#case-studies" class="block text-white hover:text-gold transition-colors">Case Studies</a>
+                <a href="#skills" class="block text-white hover:text-gold transition-colors">Skills</a>
+                <a href="#services" class="block text-white hover:text-gold transition-colors">Services</a>
+                <a href="#contact" class="block text-white hover:text-gold transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.6), #111111), url('image/workspace.jpeg'); background-size: cover;">
+        <div class="text-center z-10">
+            <p class="text-gold uppercase tracking-widest text-sm mb-4">Lagos, Nigeria</p>
+            <h1 class="text-5xl md:text-7xl font-bold uppercase tracking-wider leading-tight mb-4" style="font-size: clamp(2.5rem, 6vw, 5.5rem);">
+                FUNMILAYO<br>BANK-SANUSI
+            </h1>
+            <div class="w-16 h-px bg-gold mx-auto mb-6"></div>
+            <p class="text-lg md:text-xl font-light tracking-wide mb-8">
+                Business Operations &amp; Transformation Consultant
+            </p>
+            <p class="text-sm text-muted-light uppercase tracking-widest mb-10">
+                Building enterprise products, analytics, and ERP solutions that turn data into measurable business outcomes.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a href="#projects" class="border border-white text-white px-8 py-3 hover:bg-white hover:text-charcoal transition-colors">View My Work →</a>
+                <a href="#contact" class="bg-gold text-charcoal px-8 py-3 hover:bg-gold/80 transition-colors">Get In Touch</a>
+            </div>
+            <a href="#" class="border border-gold text-gold px-8 py-3 hover:bg-gold hover:text-charcoal transition-colors">Download CV</a>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="w-px h-16 bg-gold"></div>
+            <i class="ri-arrow-down-line text-gold text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- My Background Section -->
+    <section id="background" class="py-20 bg-dark-charcoal">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-[0.92fr_1.08fr] gap-10 items-start">
+                <div class="bg-[#171717] border border-[#2f2a1f] rounded-[28px] p-5 shadow-[0_18px_40px_rgba(0,0,0,0.22)]">
+                    <div class="mb-5">
+                        <p class="text-gold uppercase tracking-wider text-sm mb-2">About</p>
+                        <h2 class="text-4xl font-playfair font-bold mb-3">About<br>Me</h2>
+                        <div class="w-16 h-px bg-gold"></div>
+                    </div>
+                    <div class="overflow-hidden rounded-[22px] border border-gold/30 bg-[#111111] mb-5 shadow-inner shadow-black/40">
+                        <img src="image/new me.jpeg" alt="Funmilayo Bank-Sanusi" class="w-full h-[340px] md:h-[390px] object-cover object-center hover:scale-[1.02] transition-transform duration-300">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-4 text-center">
+                            <i class="ri-building-line text-gold text-3xl mb-2"></i>
+                            <p class="text-3xl font-bold text-white mb-1">15+</p>
+                            <p class="text-muted text-sm">Enterprise-Scale Projects</p>
+                        </div>
+                        <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-4 text-center">
+                            <i class="ri-time-line text-gold text-3xl mb-2"></i>
+                            <p class="text-3xl font-bold text-white mb-1">10+</p>
+                            <p class="text-muted text-sm">Years of Experience</p>
+                        </div>
+                        <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-4 text-center">
+                            <i class="ri-industry-line text-gold text-3xl mb-2"></i>
+                            <p class="text-3xl font-bold text-white mb-1">6+</p>
+                            <p class="text-muted text-sm">Industries Served</p>
+                        </div>
+                        <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-4 text-center">
+                            <i class="ri-group-line text-gold text-3xl mb-2"></i>
+                            <p class="text-3xl font-bold text-white mb-1">50+</p>
+                            <p class="text-muted text-sm">Cross-Functional Teams Led</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <blockquote class="text-xl font-playfair italic text-white mb-6 border-l-4 border-gold pl-6">
+                        "I help startups and organizations move from operational chaos to structured, scalable systems."
+                    </blockquote>
+                    <p class="text-muted-light mb-4">
+                        Hi, I'm Funmilayo, a Business Operations and Transformation Consultant.
+                    </p>
+                    <p class="text-muted-light mb-4">
+                        I help startups and organizations move from operational chaos to structured, scalable systems by designing and implementing the workflows, tools, processes, and teams that make businesses run better.
+                    </p>
+                    <p class="text-muted-light mb-4">
+                        My work sits at the intersection of business operations, technology, automation, and strategy. I've built operational systems from scratch, redesigned processes, automated repetitive tasks, worked with ERPs and SaaS platforms, and connected systems to improve how businesses operate.
+                    </p>
+                    <p class="text-muted-light mb-4">
+                        I work across ERP and SaaS platforms, APIs, process mapping, and business automation using tools such as Make.com, Google Apps Script, n8n, Zapier, Draw.io, and spreadsheets, while developing deeper capabilities in Python, JSON, SQL, and systems integration.
+                    </p>
+                    <p class="text-muted-light mb-8">
+                        In simple terms, I help businesses figure out how work should happen, then build the systems that make it happen. If you need someone who understands both the business problem and the systems required to solve it, let's talk.
+                    </p>
+                    <div class="bg-[#1e1e1e] border-l-4 border-gold p-6">
+                        <p class="text-gold uppercase tracking-wider text-sm mb-2">Core Philosophy</p>
+                        <p class="text-white">
+                            Strategy without execution is just ambition. Every transformation I lead is anchored in measurable outcomes and structured delivery.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-charcoal">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-gold uppercase tracking-wider text-sm mb-2">Featured Work</p>
+                <h2 class="text-4xl font-playfair font-bold mb-4">Selected Projects</h2>
+                <div class="w-16 h-px bg-gold mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl overflow-hidden hover:border-gold transition-colors group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=abstract minimalist dark ERP enterprise software dashboard visualization, elegant charcoal background, deep navy and gold accent geometric elements, Microsoft Dynamics technology concept, corporate digital transformation, premium executive aesthetic, no people, clean luxury design&width=600&height=800&seq=proj101&orientation=portrait" alt="ERP Implementation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-4 left-4 bg-black/70 text-gold px-3 py-1 text-xs uppercase tracking-wider border border-gold">ERP Implementation</div>
+                        <div class="absolute bottom-4 right-4 bg-black/70 text-gold px-3 py-1 text-sm font-bold">40% faster close</div>
+                    </div>
+                    <div class="p-6">
+                        <i class="ri-server-line text-gold text-2xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Microsoft Dynamics 365 F&O Rollout</h3>
+                        <p class="text-muted text-sm mb-4">Enterprise-wide ERP implementation across multiple subsidiaries, consolidating legacy systems, automating procurement, and enabling dashboard-driven finance reporting.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#2a2a2a] text-white px-3 py-1 text-xs rounded-full">Dynamics 365 F&O</span>
+                            <span class="bg-[#2a2a2a] text-white px-3 py-1 text-xs rounded-full">Azure DevOps</span>
+                            <span class="bg-[#2a2a2a] text-white px-3 py-1 text-xs rounded-full">Power BI</span>
+                            <span class="bg-[#2a2a2a] text-white px-3 py-1 text-xs rounded-full">SQL</span>
+                            <span class="bg-[#2a2a2a] text-white px-3 py-1 text-xs rounded-full">Product Management</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl overflow-hidden hover:border-gold transition-colors group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=abstract dark process flow architecture diagram, sophisticated geometric pathway network, charcoal black background with warm amber and gold glowing lines, workflow automation business concept, minimalist corporate design, no people, high-end executive aesthetic&width=600&height=800&seq=proj102&orientation=portrait" alt="Data Process Strategy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-4 left-4 bg-black/70 text-gold px-3 py-1 text-xs uppercase tracking-wider border border-gold">Data & Process Strategy</div>
+                        <div class="absolute bottom-4 right-4 bg-black/70 text-gold px-3 py-1 text-sm font-bold">55% less manual effort</div>
+                    </div>
+                    <div class="p-6">
+                        <i class="ri-flow-chart text-gold text-2xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">BPMN-Led Procurement Data & Process Overhaul</h3>
+                        <p class="text-muted text-sm mb-4">Data-led process redesign using BPMN methodology to streamline procurement workflows, improve reporting, and reduce manual effort.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#2a2a2a] text-white px-3 py-1 text-xs rounded-full">BPMN 2.0</span>
+                            <span class="bg-[#2a2a2a] text-white px-3 py-1 text-xs rounded-full">Lucidchart</span>
+                            <span class="bg-[#2a2a2a] text-white px-3 py-1 text-xs rounded-full">Power BI</span>
+                            <span class="bg-[#2a2a2a] text-white px-3 py-1 text-xs rounded-full">Excel</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl overflow-hidden hover:border-gold transition-colors group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=abstract dark Agile sprint board concept, minimalist kanban workflow visualization, charcoal background with structured grid columns, gold and white accent lines, digital product delivery technology aesthetic, no people, sophisticated clean corporate design&width=600&height=800&seq=proj103&orientation=portrait" alt="Agile Delivery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-4 left-4 bg-black/70 text-gold px-3 py-1 text-xs uppercase tracking-wider border border-gold">Agile Delivery</div>
+                        <div class="absolute bottom-4 right-4 bg-black/70 text-gold px-3 py-1 text-sm font-bold">3× delivery velocity</div>
+                    </div>
+                    <div class="p-6">
+                        <i class="ri-kanban-view text-gold text-2xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Digital Product Backlog & Sprint Delivery</h3>
+                        <p class="text-muted text-sm mb-4">Agile transformation of stalled product development, establishing Scrum practices and delivering multiple modules on time.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#2a2a2a] text-white px-3 py-1 text-xs rounded-full">Jira</span>
+                            <span class="bg-[#2a2a2a] text-white px-3 py-1 text-xs rounded-full">Confluence</span>
+                            <span class="bg-[#2a2a2a] text-white px-3 py-1 text-xs rounded-full">Scrum / Kanban</span>
+                            <span class="bg-[#2a2a2a] text-white px-3 py-1 text-xs rounded-full">Excel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="py-20 bg-off-white text-charcoal">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-gold uppercase tracking-wider text-sm mb-2">Deep Dives</p>
+                <h2 class="text-4xl font-playfair font-bold mb-4">Case Studies</h2>
+                <p class="text-muted text-sm max-w-3xl mx-auto">Each case study follows a problem → solution → impact narrative with tools, outcomes, and metrics clearly highlighted.</p>
+            </div>
+            <div class="space-y-4">
+                <!-- Case Study 1 -->
+                <div class="border border-[#e8e6e0] rounded-xl overflow-hidden">
+                    <div class="flex items-center justify-between p-6 cursor-pointer" onclick="toggleAccordion('cs1')">
+                        <div>
+                            <p class="text-gold uppercase tracking-wider text-xs mb-1">ERP Implementation | Microsoft Dynamics 365</p>
+                            <h3 class="text-xl font-bold">Microsoft Dynamics 365 F&O Implementation for a Retail & Distribution Group</h3>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <span class="text-gold text-2xl font-bold opacity-50">01</span>
+                            <button class="w-8 h-8 border border-gold rounded-full flex items-center justify-center text-gold">
+                                <span id="cs1-icon">+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="cs1-content" class="hidden px-6 pb-6">
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">Dynamics 365 F&O</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">Azure DevOps</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">Power BI</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">SQL</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">BPMN 2.0</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">Excel</span>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold mb-2">Context</h4>
+                                <p class="text-sm mb-4">Mid-sized Nigerian conglomerate, 6 subsidiaries, legacy ERP mix, 5000+ POs/month</p>
+                                <h4 class="font-bold mb-2">Problem</h4>
+                                <p class="text-sm mb-4">18–22 day month-end close, manual reconciliation, no group-level reporting</p>
+                                <h4 class="font-bold mb-2">Approach</h4>
+                                <p class="text-sm">Fit-gap analysis, 3-phase roadmap, BPMN mapping of 24 processes, Azure DevOps</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Solution</h4>
+                                <p class="text-sm mb-4">D365 F&O single-tenant across 6 subsidiaries, with SQL-powered reporting, 12 Power BI dashboards, and bank integration.</p>
+                                <h4 class="font-bold mb-4">Business Impact</h4>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="bg-gold text-charcoal p-4 rounded-lg text-center">
+                                        <p class="text-2xl font-bold">40%</p>
+                                        <p class="text-sm">close reduction</p>
+                                    </div>
+                                    <div class="bg-gold text-charcoal p-4 rounded-lg text-center">
+                                        <p class="text-2xl font-bold">6→1</p>
+                                        <p class="text-sm">systems consolidated</p>
+                                    </div>
+                                    <div class="bg-gold text-charcoal p-4 rounded-lg text-center">
+                                        <p class="text-2xl font-bold">₦640M</p>
+                                        <p class="text-sm">procurement savings</p>
+                                    </div>
+                                    <div class="bg-gold text-charcoal p-4 rounded-lg text-center">
+                                        <p class="text-2xl font-bold">91%</p>
+                                        <p class="text-sm">UAT pass rate</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Case Study 2 -->
+                <div class="border border-[#e8e6e0] rounded-xl overflow-hidden">
+                    <div class="flex items-center justify-between p-6 cursor-pointer" onclick="toggleAccordion('cs2')">
+                        <div>
+                            <p class="text-gold uppercase tracking-wider text-xs mb-1">Data & Process Redesign | BPMN | Lean</p>
+                            <h3 class="text-xl font-bold">Procurement Process Redesign for a Financial Services Organisation</h3>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <span class="text-gold text-2xl font-bold opacity-50">02</span>
+                            <button class="w-8 h-8 border border-gold rounded-full flex items-center justify-center text-gold">
+                                <span id="cs2-icon">+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="cs2-content" class="hidden px-6 pb-6">
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">BPMN 2.0</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">Lucidchart</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">Power BI</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">SQL</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">Excel</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">SharePoint</span>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold mb-2">Context</h4>
+                                <p class="text-sm mb-4">West Africa asset management firm, 2,400 requisitions/year, 9 procurement staff</p>
+                                <h4 class="font-bold mb-2">Problem</h4>
+                                <p class="text-sm mb-4">31-day avg cycle (benchmark: 12–15 days), redundant approvals, paper-based routing, maverick buying</p>
+                                <h4 class="font-bold mb-2">Approach</h4>
+                                <p class="text-sm">AS-IS BPMN audit of 14 sub-processes, value stream analysis, redesign workshops, delegation of authority matrix</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Solution</h4>
+                                <p class="text-sm mb-4">4-tier approval workflow, Preferred Vendor Register, SharePoint PO-invoice matching, and SQL-backed performance dashboards.</p>
+                                <h4 class="font-bold mb-4">Business Impact</h4>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="bg-gold text-charcoal p-4 rounded-lg text-center">
+                                        <p class="text-2xl font-bold">55%</p>
+                                        <p class="text-sm">cycle reduction</p>
+                                    </div>
+                                    <div class="bg-gold text-charcoal p-4 rounded-lg text-center">
+                                        <p class="text-2xl font-bold">9→4</p>
+                                        <p class="text-sm">approval steps</p>
+                                    </div>
+                                    <div class="bg-gold text-charcoal p-4 rounded-lg text-center">
+                                        <p class="text-2xl font-bold">78%</p>
+                                        <p class="text-sm">maverick purchasing reduction</p>
+                                    </div>
+                                    <div class="bg-gold text-charcoal p-4 rounded-lg text-center">
+                                        <p class="text-2xl font-bold">₦180M</p>
+                                        <p class="text-sm">vendor savings</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Case Study 3 -->
+                <div class="border border-[#e8e6e0] rounded-xl overflow-hidden">
+                    <div class="flex items-center justify-between p-6 cursor-pointer" onclick="toggleAccordion('cs3')">
+                        <div>
+                            <p class="text-gold uppercase tracking-wider text-xs mb-1">Product Management | Agile Delivery | Jira</p>
+                            <h3 class="text-xl font-bold">Agile Delivery of an Internal Operations Platform for a Professional Services Firm</h3>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <span class="text-gold text-2xl font-bold opacity-50">03</span>
+                            <button class="w-8 h-8 border border-gold rounded-full flex items-center justify-center text-gold">
+                                <span id="cs3-icon">+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="cs3-content" class="hidden px-6 pb-6">
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">Jira</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">Confluence</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">SQL</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">Excel</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">Scrum / Kanban</span>
+                            <span class="bg-charcoal text-white px-3 py-1 text-xs rounded-full">BPMN 2.0</span>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold mb-2">Context</h4>
+                                <p class="text-sm mb-4">Big-4-affiliated firm, 9-month programme, 14-person squad, digitalizing onboarding/timesheet/staffing/leave</p>
+                                <h4 class="font-bold mb-2">Problem</h4>
+                                <p class="text-sm mb-4">Stalled after 3 months, no increments delivered, poorly written backlog, no sprint visibility</p>
+                                <h4 class="font-bold mb-2">Approach</h4>
+                                <p class="text-sm">Full backlog audit of 240 items, rewrote 80+ user stories to INVEST criteria, re-established Scrum ceremonies, Jira setup with epics/story points/sprints</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Solution</h4>
+                                <p class="text-sm mb-4">4 deployed modules in 6 months: Digital Onboarding, Staffing Portal, Timesheet, Leave Management, supported by Jira backlog dashboards and delivery metrics.</p>
+                                <h4 class="font-bold mb-4">Business Impact</h4>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="bg-gold text-charcoal p-4 rounded-lg text-center">
+                                        <p class="text-2xl font-bold">3×</p>
+                                        <p class="text-sm">velocity increase</p>
+                                    </div>
+                                    <div class="bg-gold text-charcoal p-4 rounded-lg text-center">
+                                        <p class="text-2xl font-bold">4</p>
+                                        <p class="text-sm">modules deployed</p>
+                                    </div>
+                                    <div class="bg-gold text-charcoal p-4 rounded-lg text-center">
+                                        <p class="text-2xl font-bold">65%</p>
+                                        <p class="text-sm">sprint carryover reduction</p>
+                                    </div>
+                                    <div class="bg-gold text-charcoal p-4 rounded-lg text-center">
+                                        <p class="text-2xl font-bold">240+</p>
+                                        <p class="text-sm">items groomed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-charcoal">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-gold uppercase tracking-wider text-sm mb-2">Client Testimonials</p>
+                <h2 class="text-4xl font-playfair font-bold mb-4">What Clients Say</h2>
+                <div class="w-16 h-px bg-gold mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-6">
+                    <p class="text-muted-light mb-4">"Funmilayo's expertise in ERP implementation and process optimization transformed our month-end close from 22 days to just 13. Her structured approach and attention to detail delivered measurable results that exceeded our expectations."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center text-charcoal font-bold mr-4">KB</div>
+                        <div>
+                            <p class="font-bold">Akinsheye Akindele</p>
+                            <p class="text-muted text-sm">CFO, Retail Group</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-6">
+                    <p class="text-muted-light mb-4">"Working with Funmilayo on our procurement redesign was a game-changer. She not only streamlined our processes but also coached our team on sustainable improvements. The ROI was immediate and substantial."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center text-charcoal font-bold mr-4">BG</div>
+                        <div>
+                            <p class="font-bold">Banke Gbadebo</p>
+                            <p class="text-muted text-sm">Operations Director, Financial Services</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-6">
+                    <p class="text-muted-light mb-4">"Funmilayo brought structure and velocity to our stalled agile transformation. Her hands-on approach in grooming our backlog and establishing proper ceremonies got us back on track quickly."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center text-charcoal font-bold mr-4">OS</div>
+                        <div>
+                            <p class="font-bold">Olufemi Sanusi</p>
+                            <p class="text-muted text-sm">Head of IT, Professional Services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-charcoal">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-gold uppercase tracking-wider text-sm mb-2">Expertise</p>
+                <h2 class="text-4xl font-playfair font-bold mb-4">Tools & Capabilities</h2>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+                <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-6 text-center relative">
+                    <div class="w-12 h-12 border border-gold rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-file-excel-line text-gold text-xl"></i>
+                    </div>
+                    <p class="text-gold text-lg font-bold absolute top-4 right-4">97%</p>
+                    <h3 class="text-lg font-bold mb-2">Microsoft Excel</h3>
+                    <p class="text-muted text-sm mb-4">Advanced data analysis, complex formulas, VBA automation, and dashboard creation for business intelligence.</p>
+                    <div class="w-full bg-[#2a2a2a] rounded-full h-2">
+                        <div class="bg-gold h-2 rounded-full" style="width: 97%"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-6 text-center relative">
+                    <div class="w-12 h-12 border border-gold rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-trello-line text-gold text-xl"></i>
+                    </div>
+                    <p class="text-gold text-lg font-bold absolute top-4 right-4">93%</p>
+                    <h3 class="text-lg font-bold mb-2">Jira (Agile/Scrum)</h3>
+                    <p class="text-muted text-sm mb-4">Sprint planning, backlog management, agile ceremonies facilitation, and team velocity tracking.</p>
+                    <div class="w-full bg-[#2a2a2a] rounded-full h-2">
+                        <div class="bg-gold h-2 rounded-full" style="width: 93%"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-6 text-center relative">
+                    <div class="w-12 h-12 border border-gold rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-server-line text-gold text-xl"></i>
+                    </div>
+                    <p class="text-gold text-lg font-bold absolute top-4 right-4">91%</p>
+                    <h3 class="text-lg font-bold mb-2">Microsoft Dynamics 365</h3>
+                    <p class="text-muted text-sm mb-4">ERP implementation, configuration, integration, and business process automation across F&O modules.</p>
+                    <div class="w-full bg-[#2a2a2a] rounded-full h-2">
+                        <div class="bg-gold h-2 rounded-full" style="width: 91%"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-6 text-center relative">
+                    <div class="w-12 h-12 border border-gold rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-flow-chart text-gold text-xl"></i>
+                    </div>
+                    <p class="text-gold text-lg font-bold absolute top-4 right-4">95%</p>
+                    <h3 class="text-lg font-bold mb-2">BPMN Process Modelling</h3>
+                    <p class="text-muted text-sm mb-4">Business process analysis, AS-IS/TO-BE mapping, workflow optimization, and documentation.</p>
+                    <div class="w-full bg-[#2a2a2a] rounded-full h-2">
+                        <div class="bg-gold h-2 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-6 text-center relative">
+                    <div class="w-12 h-12 border border-gold rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-user-star-line text-gold text-xl"></i>
+                    </div>
+                    <p class="text-gold text-lg font-bold absolute top-4 right-4">96%</p>
+                    <h3 class="text-lg font-bold mb-2">Stakeholder Management</h3>
+                    <p class="text-muted text-sm mb-4">Executive communication, change management, training delivery, and organizational alignment.</p>
+                    <div class="w-full bg-[#2a2a2a] rounded-full h-2">
+                        <div class="bg-gold h-2 rounded-full" style="width: 96%"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-6 text-center relative">
+                    <div class="w-12 h-12 border border-gold rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-refresh-line text-gold text-xl"></i>
+                    </div>
+                    <p class="text-gold text-lg font-bold absolute top-4 right-4">95%</p>
+                    <h3 class="text-lg font-bold mb-2">Business Process Improvement</h3>
+                    <p class="text-muted text-sm mb-4">Process redesign, operational diagnostics, workflow optimization, and the build-out of scalable business systems.</p>
+                    <div class="w-full bg-[#2a2a2a] rounded-full h-2">
+                        <div class="bg-gold h-2 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-6 text-center relative">
+                    <div class="w-12 h-12 border border-gold rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-database-line text-gold text-xl"></i>
+                    </div>
+                    <p class="text-gold text-lg font-bold absolute top-4 right-4">97%</p>
+                    <h3 class="text-lg font-bold mb-2">SQL & Data Analytics</h3>
+                    <p class="text-muted text-sm mb-4">SQL query design, data modelling, dashboard development, and reporting for enterprise decision-making.</p>
+                    <div class="w-full bg-[#2a2a2a] rounded-full h-2">
+                        <div class="bg-gold h-2 rounded-full" style="width: 97%"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-6 text-center relative">
+                    <div class="w-12 h-12 border border-gold rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-robot-line text-gold text-xl"></i>
+                    </div>
+                    <p class="text-gold text-lg font-bold absolute top-4 right-4">88%</p>
+                    <h3 class="text-lg font-bold mb-2">Workflow Automation & Systems Integration</h3>
+                    <p class="text-muted text-sm mb-4">Connecting tools, automating repetitive work, and building operational systems that improve speed, visibility, and consistency.</p>
+                    <div class="w-full bg-[#2a2a2a] rounded-full h-2">
+                        <div class="bg-gold h-2 rounded-full" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-8 text-center">
+                <h3 class="text-xl font-bold mb-6">My Methodology</h3>
+                <div class="flex justify-center items-center space-x-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 border-2 border-gold rounded-full flex items-center justify-center mb-2">
+                            <span class="text-gold font-bold">1</span>
+                        </div>
+                        <p class="text-sm">Diagnose</p>
+                    </div>
+                    <div class="w-16 h-px bg-gradient-to-r from-gold to-gold"></div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 border-2 border-gold rounded-full flex items-center justify-center mb-2">
+                            <span class="text-gold font-bold">2</span>
+                        </div>
+                        <p class="text-sm">Design</p>
+                    </div>
+                    <div class="w-16 h-px bg-gradient-to-r from-gold to-gold"></div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 border-2 border-gold rounded-full flex items-center justify-center mb-2">
+                            <span class="text-gold font-bold">3</span>
+                        </div>
+                        <p class="text-sm">Deliver</p>
+                    </div>
+                    <div class="w-16 h-px bg-gradient-to-r from-gold to-gold"></div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 border-2 border-gold rounded-full flex items-center justify-center mb-2">
+                            <span class="text-gold font-bold">4</span>
+                        </div>
+                        <p class="text-sm">Embed</p>
+                    </div>
+                    <div class="w-16 h-px bg-gradient-to-r from-gold to-gold"></div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 border-2 border-gold rounded-full flex items-center justify-center mb-2">
+                            <span class="text-gold font-bold">5</span>
+                        </div>
+                        <p class="text-sm">Scale</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-off-white text-charcoal">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-gold uppercase tracking-wider text-sm mb-2">Consulting Services</p>
+                <h2 class="text-4xl font-playfair font-bold mb-4">How I Can Help</h2>
+                <div class="w-16 h-px bg-gold mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white border border-[#e8e6e0] rounded-xl p-8 text-center">
+                    <i class="ri-server-line text-gold text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Operations Systems Design</h3>
+                    <p class="text-muted mb-6">Designing scalable operating models, ERP workflows, and process infrastructure that help teams work more clearly and efficiently.</p>
+                </div>
+                <div class="bg-white border border-[#e8e6e0] rounded-xl p-8 text-center">
+                    <i class="ri-flow-chart text-gold text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Process & Workflow Optimization</h3>
+                    <p class="text-muted mb-6">Mapping, redesigning, and improving workflows to reduce friction, increase accountability, and build better day-to-day operations.</p>
+                </div>
+                <div class="bg-white border border-[#e8e6e0] rounded-xl p-8 text-center">
+                    <i class="ri-kanban-view text-gold text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Transformation & Change Enablement</h3>
+                    <p class="text-muted mb-6">Helping teams adopt new systems, workflows, and operating standards with clarity, structure, and sustainable implementation support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-dark-charcoal">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-playfair font-bold mb-4">Let’s Build Better Operations</h2>
+            <p class="text-muted-light mb-8 max-w-2xl mx-auto">Ready to simplify operations, improve systems, and create workflows that scale with your business? Let’s talk about what your next transformation should look like.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:consulting@optimorph.com" class="border border-white text-white px-8 py-3 hover:bg-white hover:text-charcoal transition-colors">Email Me</a>
+                <a href="https://www.linkedin.com/in/funmilayo-bank-sanusi-a6ba91248" class="bg-gold text-charcoal px-8 py-3 hover:bg-gold/80 transition-colors">Connect on LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
