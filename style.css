@@ -137,6 +137,16 @@ section {
     }
 }
 
+@media (min-width: 1024px) {
+    #background .grid {
+        grid-template-columns: 0.9fr 1.1fr;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+}
+
 @media (max-width: 480px) {
     h1 {
         font-size: clamp(2.2rem, 13vw, 3.2rem) !important;
